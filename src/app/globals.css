@@ -24,3 +24,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.slick-list {margin: 0 -5px;}
+.slick-slide>div {padding: 0 5px;}
+
+ .slick-current {
+          border: 1px solid #00EEFF;
+          border-radius: 10px;
+        }

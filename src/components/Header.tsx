@@ -66,7 +66,7 @@ const Header: React.FC = () => {
       {/* Right Section */}
       <section className="w-full md:w-1/2 p-4 flex items-center justify-center">
         <Image
-          src="/profile.png" // Replace with your actual image
+          src="/HeroImage.png" // Replace with your actual image
           alt="Profile"
           width={500}
           height={500}

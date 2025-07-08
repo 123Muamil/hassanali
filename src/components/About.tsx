@@ -13,7 +13,7 @@ const About = () => {
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
                   w-[244px] h-[240px] rounded-full border-4 border-dotted border-[#323946] bg-[#323946] overflow-hidden flex items-center justify-center">
         <Image
-          src="/profile.png" // 🔁 Replace with your actual image path
+          src="/HeroImage.png" // 🔁 Replace with your actual image path
           alt="Profile"
           width={96}
           height={96}

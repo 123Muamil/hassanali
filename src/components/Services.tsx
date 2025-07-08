@@ -38,7 +38,7 @@ const Services: React.FC = () => {
           <div className="bg-[#1c2833] rounded-lg p-6 flex flex-col justify-between max-w-[385px] h-[484px] mx-auto border border-[#00e5ff]">
             <div className="flex flex-col items-center">
              <Image
-                src="/web.jpg"
+                src="/cloud.jpg"
                 alt="Web Development"
                 className="mb-4 w-full h-[200px] rounded-[10px]"
                 width={212}
@@ -62,7 +62,7 @@ const Services: React.FC = () => {
           <div className="bg-[#1c2833] rounded-lg p-6 flex flex-col justify-between max-w-[385px] h-[484px] mx-auto">
             <div className="flex flex-col items-center">
              <Image
-                src="/web.jpg"
+                src="/uiux.jpg"
                 alt="Web Development"
                 className="mb-4 w-full h-[200px] rounded-[10px]"
                 width={212}

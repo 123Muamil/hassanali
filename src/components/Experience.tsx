@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import React from "react";
 import { SiFiverr, SiUpwork } from "react-icons/si";
@@ -32,13 +33,13 @@ const Experience: React.FC = () => {
                 <span className="text-[16px] text-[#00e5ff] font-semibold">Fivver</span>
               </p>
               <p className="text-[16px] text-white text-justify leading-tight">
-                I am professional Web Designer. I have designed more than 10 web
-                template for my client. You can hire me for design your personal,
-                business or other website template. You can trust me. I complied your
-                work with your full satisfaction
+               Full Stack Developer with expertise in both frontend and backend technologies.
+Skilled in building responsive web applications using React, Node.js, and databases.
+Experienced in RESTful API design, cloud deployment, and performance optimization.
+Focused on delivering clean, scalable code and seamless user experiences.
               </p>
             </div>
-            <button className="cursor-pointer bg-white text-[#1c2833] text-[11px] font-semibold rounded-full w-full py-3 mt-6 hover:-translate-y-1 transition-transform duration-300">
+            <button onClick={()=>window.open('https://www.fiverr.com/hassan_ali_123')} className="cursor-pointer bg-white text-[#1c2833] text-[11px] font-semibold rounded-full w-full py-3 mt-6 hover:-translate-y-1 transition-transform duration-300">
               Hire Me
             </button>
           </div>
@@ -58,13 +59,13 @@ const Experience: React.FC = () => {
                 <span className="text-[16px] text-[#00e5ff] font-semibold">UpWork</span>
               </p>
               <p className="text-[16px] text-white text-justify leading-tight">
-                I am a skilled DevOps Engineer with a focus on automation, cloud
-                infrastructure, and CI/CD. Experienced in tools like Docker,
-                Kubernetes, Jenkins, Git, and AWS ensuring smooth collaboration
-                between development and operations teams.
+               Software Engineer with strong problem-solving skills and a passion for clean code.
+Experienced in designing, developing, and maintaining scalable software systems.
+Proficient in multiple programming languages and modern development frameworks.
+Committed to delivering high-quality, efficient, and reliable software solutions.
               </p>
             </div>
-            <button className="cursor-pointer bg-[#00e5ff] text-[#1c2833] text-[11px] font-semibold rounded-full w-full py-3 mt-6 hover:-translate-y-1 transition-transform duration-300">
+            <button onClick={()=>window.open('https://www.upwork.com/freelancers/~0130423deb04b204f0')} className="cursor-pointer bg-[#00e5ff] text-[#1c2833] text-[11px] font-semibold rounded-full w-full py-3 mt-6 hover:-translate-y-1 transition-transform duration-300">
               Hire Me
             </button>
           </div>
@@ -83,19 +84,16 @@ const Experience: React.FC = () => {
               </div>
              
               <h3 className="mt-4 text-[26px] text-[#00e5ff] font-bold text-center text-sm leading-tight mb-3">
-                Verification Engineer
+              CEO
               </h3>
               <p className="text-[10px] text-white text-center mb-1 leading-tight">
                 <span className="text-[16px] text-[#00e5ff] font-semibold">MadniSofts</span>
               </p>
               <p className="text-[16px] text-white text-justify leading-tight">
-                I am professional Graphic designer. I have designed more than 30
-                template for my client. You can hire me for design your personal,
-                business or other template. You can trust me. I complied your work
-                with your full satisfaction
+              As a CEO of Madnisofts I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.
               </p>
             </div>
-            <button className="cursor-pointer bg-white text-[#1c2833] text-[11px] font-semibold rounded-full w-full py-3 mt-6 hover:-translate-y-1 transition-transform duration-300">
+            <button onClick={()=>window.open('https://madnisofts.com/')} className="cursor-pointer bg-white text-[#1c2833] text-[11px] font-semibold rounded-full w-full py-3 mt-6 hover:-translate-y-1 transition-transform duration-300">
               Hire Me
             </button>
           </div>

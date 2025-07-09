@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Typewriter } from 'react-simple-typewriter';
 import {  FaGithub, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+import Link from 'next/link';
 
 const Header: React.FC = () => {
   return (
@@ -36,18 +37,25 @@ const Header: React.FC = () => {
 
           {/* Social Icons */}
           <div className="flex space-x-4 mb-6 text-2xl">
-            <a href="#" aria-label="LinkedIn" className="border border-[#00EEFF] p-3 rounded-full hover:-translate-y-1 transition-transform duration-300">
+            <a href="https://www.facebook.com/share/1C4L1EpzZr/" target='_blank' aria-label="LinkedIn" className="border border-[#00EEFF] p-3 rounded-full hover:-translate-y-1 transition-transform duration-300">
               <FaFacebookF color='#00EEFF' />
             </a>
-            <a href="#" aria-label="GitHub" className="border border-[#00EEFF] p-3 rounded-full hover:-translate-y-1 transition-transform duration-300">
+             <a href="https://www.linkedin.com/in/hassan-ali-riaz-remotework?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' aria-label="GitHub" className="border border-[#00EEFF] p-3 rounded-full hover:-translate-y-1 transition-transform duration-300">
               <FaLinkedinIn color='#00EEFF' />
             </a>
-          <a href="#" aria-label="GitHub" className="border border-[#00EEFF] p-3 rounded-full hover:-translate-y-1 transition-transform duration-300">
-              <MdEmail color='#00EEFF' />
-            </a>
-             <a href="#" aria-label="GitHub" className="border border-[#00EEFF] p-3 rounded-full hover:-translate-y-1 transition-transform duration-300">
+ <a
+  href="mailto:hassanali.m.riaz@gmial.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Email"
+  className="border border-[#00EEFF] p-3 rounded-full hover:-translate-y-1 transition-transform duration-300"
+>
+  <MdEmail color="#00EEFF" />
+</a>
+
+              <Link href="https://www.facebook.com/share/1C4L1EpzZr/" target='_blank' aria-label="GitHub" className="border border-[#00EEFF] p-3 rounded-full hover:-translate-y-1 transition-transform duration-300">
               <FaGithub color='#00EEFF' />
-            </a>
+            </Link>
             
           </div>
 
@@ -56,7 +64,7 @@ const Header: React.FC = () => {
             <button className=" w-1/2 cursor-pointer bg-cyan-500  text-white  py-3 rounded-full transition hover:-translate-y-1 transition-transform duration-300">
               Contact Me
             </button>
-            <button className="w-1/2 cursor-pointer border border-cyan-500 text-cyan-500  py-3 rounded-full transition hover:-translate-y-1 transition-transform duration-300">
+            <button onClick={()=>window.open('https://www.upwork.com/freelancers/~0130423deb04b204f0')} className="w-1/2 cursor-pointer border border-cyan-500 text-cyan-500  py-3 rounded-full transition hover:-translate-y-1 transition-transform duration-300">
               Hire Me
             </button>
           </div>

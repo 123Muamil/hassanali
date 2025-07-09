@@ -4,38 +4,29 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from 'next/image';
 import { FaStar, FaRegStar } from 'react-icons/fa';
+import { CgProfile } from "react-icons/cg";
 
 const reels = [
   {
     image: "/profile.png",
-    review: "Inspirational designs, illustrations, and graphic elements from the world's best designers.",
-    rating: 4,
-  },
-  {
-    image: "/profile.png",
-    review: "Excellent service and creative output. Highly recommended for quality design solutions.",
+    review: "Hassan is the GOAT ! thanks for the job !",
     rating: 5,
   },
   {
     image: "/profile.png",
-    review: "Very professional and fast response. Great collaboration experience.",
-    rating: 3,
-  },
-  {
-    image: "/profile.png",
-    review: "Outstanding work with attention to detail. Will work again.",
+    review: "Fantastic work! Great communicator and works hard to meet all expectations",
     rating: 5,
   },
   {
     image: "/profile.png",
-    review: "Good creativity but needs to improve communication slightly.",
-    rating: 3,
+    review: "I have hired Hassan on multiple projects now and he always exceeds my expectations! I am very pleased with his work and I would highly recommend him to everyone, A+ experience and I will be reaching out again for any future projects.. Thank You!!",
+    rating: 5,
   },
   {
     image: "/profile.png",
-    review: "Reliable and talented designer delivering on time.",
-    rating: 4,
-  },
+    review: "The second project completed by Hassan - as the first one prior to this - was done exactly how it was agreed upon, and right on time. Again, Hassan is not only quite proficient in the technical domain, but also in communication and customer service. I'm looking forward to start a third project with him. Highly recommended!",
+    rating: 5,
+  }
 ];
 
 export default function ReelsCarousel() {
@@ -72,16 +63,23 @@ centerPadding: '0px', // or '20px', '5%', etc.
                 className="h-[450px] bg-[#323946] rounded-[10px]  transition-transform "
               >
                 <div className="relative h-56 flex justify-center items-center overflow-hidden">
-                  <Image
+                  {/* <Image
                     src={item.image}
                     alt="review"
                     height={150}
                     width={150}
                     className="rounded-full object-cover transition-transform duration-500 hover:scale-110"
-                  />
+                  /> */}
+                  <CgProfile size={150} color="#FFFFFF" />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-white text-lg font-semibold mb-4">
+                  <h3 className="text-white text-lg font-semibold mb-4"  style={{
+  display: '-webkit-box',
+  WebkitLineClamp: 4,
+  WebkitBoxOrient: 'vertical',
+  overflow: 'hidden',
+  textOverflow: 'ellipsis'
+}}>
                     {item.review}
                   </h3>
                   <div className="flex justify-center space-x-1 text-yellow-400">

@@ -2,9 +2,25 @@
 
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaArrowUp } from 'react-icons/fa';
 import { FaLinkedinIn, FaFacebookF } from 'react-icons/fa';
-import React from 'react';
+import React, { useState } from 'react';
 
 const Footer: React.FC = () => {
+  const [firstname,setFirstName]=useState('')
+  const [lastname,setLastName]=useState('')
+  const [phone,setPhone]=useState('')
+  const [subject,setSubject]=useState('')
+  const [email,setEmail]=useState('')
+  const [message,setMessage]=useState('')
+  const handleSubmit=async()=>{
+    const data={
+      name:firstname+lastname,
+      phone,
+      subject,
+      email,
+      message
+    }
+    console.log("The data is:",data)
+  }
   return (
     <div className="bg-[#2c3642] text-white flex flex-col justify-between" id='contact'>
       <main className="flex flex-col md:flex-row max-w-6xl mx-auto px-6 py-16 md:py-34 gap-12 md:gap-24">
@@ -42,11 +58,15 @@ const Footer: React.FC = () => {
             <input
               type="text"
               placeholder="First Name"
+              value={firstname}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFirstName(e.target.value)}
               className="bg-[#12171f] text-white text-xs rounded-md px-3 py-3 w-1/2 focus:outline-none"
             />
             <input
               type="text"
               placeholder="Last Name"
+              value={lastname}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setLastName(e.target.value)}
               className="bg-[#12171f] text-white text-xs rounded-md px-3 py-3 w-1/2 focus:outline-none"
             />
           </div>
@@ -54,27 +74,36 @@ const Footer: React.FC = () => {
             <input
               type="text"
               placeholder="Phone"
+              value={phone}
+              onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setPhone(e.target.value)}
               className="bg-[#12171f] text-white text-xs rounded-md px-3 py-3 w-1/2 focus:outline-none"
             />
             <input
               type="text"
               placeholder="Subject"
+              value={subject}
+              onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setSubject(e.target.value)}
               className="bg-[#12171f] text-white text-xs rounded-md px-3 py-3 w-1/2 focus:outline-none"
             />
           </div>
           <input
             type="email"
             placeholder="Email"
+            value={email}
+            onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setEmail(e.target.value)}
             className="bg-[#12171f] text-white text-xs rounded-md px-3 py-3 w-full focus:outline-none"
           />
           <textarea
             placeholder="Message"
             rows={4}
+            value={message}
+            onChange={(e:React.ChangeEvent<HTMLTextAreaElement>)=>setMessage(e.target.value)}
             className="bg-[#12171f] text-white text-xs rounded-md px-3 py-3 w-full resize-none focus:outline-none"
           ></textarea>
           <button
             type="submit"
             className="bg-[#12171f] text-white text-xs rounded-md py-3 w-full cursor-pointer"
+            onClick={handleSubmit}
           >
             Submit
           </button>

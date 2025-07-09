@@ -58,7 +58,7 @@ centerPadding: '0px', // or '20px', '5%', etc.
   };
 
   return (
-    <div className="bg-[#1F242D]">
+    <div className="bg-[#1F242D]" id="reviews">
       <div className="max-w-7xl text-center mx-auto px-4 py-20">
         <h2 className="text-white text-lg font-semibold mb-8">
           My <span className="text-[#00c2f3]">Services</span>

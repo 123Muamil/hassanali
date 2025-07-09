@@ -6,7 +6,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <div className="bg-[#2c3642] text-white flex flex-col justify-between">
+    <div className="bg-[#2c3642] text-white flex flex-col justify-between" id='contact'>
       <main className="flex flex-col md:flex-row max-w-6xl mx-auto px-6 py-16 md:py-34 gap-12 md:gap-24">
         <section className="md:w-1/2 flex flex-col gap-6">
           <h2 className="text-white text-5xl font-bold text-center md:text-left">

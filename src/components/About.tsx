@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 const About = () => {
   return (
-    <div className='bg-[#323946]'>
+    <div className='bg-[#323946]' id='about'>
     <div className="max-w-7xl text-center  mx-auto px-4 py-20">
          <h2 className="text-white text-lg font-semibold mb-8">
       About <span className="text-[#00c2f3]">Me</span>

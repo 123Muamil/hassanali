@@ -3,7 +3,7 @@ import React from "react";
 import { SiFiverr, SiUpwork } from "react-icons/si";
 const Experience: React.FC = () => {
   return (
-    <div className="bg-[#323946]">
+    <div className="bg-[#323946]" id="experience">
       <div className="max-w-7xl text-center mx-auto px-4 py-20">
         <h2 className="text-white text-lg font-semibold mb-8">
           My <span className="text-[#00c2f3]">Experience</span>

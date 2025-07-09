@@ -32,7 +32,7 @@ const cards = [
 
 export default function CardGrid() {
   return (
-    <div className='bg-[#1F242D]'>
+    <div className='bg-[#1F242D]' id='projects'>
       <div className="max-w-7xl text-center mx-auto px-4 py-20">
         <h2 className="text-white text-lg font-semibold mb-8">
           My <span className="text-[#00c2f3]">Projects</span>

@@ -8,7 +8,7 @@ import Others from './Others';
 const About = () => {
   const [component, setComponent] = useState(<Frontend />);
   return (
-    <div className='bg-[#1F242D]'>
+    <div className='bg-[#1F242D]' id='skills'>
       <div className="max-w-7xl text-center mx-auto px-4 py-20">
         <div className='mb-8'>
           <h2 className="text-white text-lg font-semibold mb-2">

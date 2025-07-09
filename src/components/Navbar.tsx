@@ -26,12 +26,13 @@ export default function Navbar() {
             {/* Right side buttons - Desktop only */}
             <div className="hidden md:flex space-x-4 items-center">
                            <Link href="/" className="block italic text-white hover:text-blue-600">Home</Link>
-              <Link href="/about" className="block italic text-white hover:text-blue-600">About</Link>
-              <Link href="/experience" className="block italic text-white hover:text-blue-600">Experience</Link>
-              <Link href="/project" className="block italic text-white hover:text-blue-600">Projects</Link>
-              <Link href="/services" className="block italic text-white hover:text-blue-600">Services</Link>
-              <Link href="/reviews" className="block italic text-white hover:text-blue-600">Reviews</Link>
-              <Link href="/contact" className="block italic text-white hover:text-blue-600">Contact</Link>
+              <Link href="#about" className="block italic text-white hover:text-blue-600">About</Link>
+              <Link href="#skills" className="block italic text-white hover:text-blue-600">Skills</Link>
+              <Link href="#experience" className="block italic text-white hover:text-blue-600">Experience</Link>
+              <Link href="#projects" className="block italic text-white hover:text-blue-600">Projects</Link>
+              <Link href="#services" className="block italic text-white hover:text-blue-600">Services</Link>
+              <Link href="#reviews" className="block italic text-white hover:text-blue-600">Reviews</Link>
+              <Link href="#contact" className="block italic text-white hover:text-blue-600">Contact</Link>
             </div>
 
             {/* Hamburger - Mobile Only */}
@@ -47,7 +48,7 @@ export default function Navbar() {
       {/* Overlay */}
       {drawerOpen && (
         <div
-          className="fixed inset-0 bg-white bg-opacity-50 z-40"
+          className="fixed inset-0 bg-black/50 bg-opacity-10 z-40"
           onClick={() => setDrawerOpen(false)}
         />
       )}
@@ -69,13 +70,13 @@ export default function Navbar() {
           </button>
         </div>
        <div className="space-y-4">
-  <Link href="/" className="block italic text-white hover:text-blue-600 border-b border-[#00EEFF4D] px-6 py-2">Home</Link>
-  <Link href="/about" className="block italic text-white hover:text-blue-600 border-b border-[#00EEFF4D] px-6 py-2">About</Link>
-  <Link href="/experience" className="block italic text-white hover:text-blue-600 border-b border-[#00EEFF4D] px-6 py-2">Experience</Link>
-  <Link href="/project" className="block italic text-white hover:text-blue-600 border-b border-[#00EEFF4D] px-6 py-2">Projects</Link>
-  <Link href="/services" className="block italic text-white hover:text-blue-600 border-b border-[#00EEFF4D] px-6 py-2">Services</Link>
-  <Link href="/reviews" className="block italic text-white hover:text-blue-600 border-b border-[#00EEFF4D] px-6 py-2">Reviews</Link>
-  <Link href="/contact" className="block italic text-white hover:text-blue-600 border-b border-[#00EEFF4D] px-6 py-2">Contact</Link>
+  <Link href="/" onClick={()=>setDrawerOpen(false)} className="block italic text-white hover:text-blue-600 border-b border-[#00EEFF4D] px-6 py-2">Home</Link>
+  <Link href="#about" onClick={()=>setDrawerOpen(false)} className="block italic text-white hover:text-blue-600 border-b border-[#00EEFF4D] px-6 py-2">About</Link>
+  <Link href="#experience" onClick={()=>setDrawerOpen(false)}  className="block italic text-white hover:text-blue-600 border-b border-[#00EEFF4D] px-6 py-2">Experience</Link>
+  <Link href="#projects" onClick={()=>setDrawerOpen(false)} className="block italic text-white hover:text-blue-600 border-b border-[#00EEFF4D] px-6 py-2">Projects</Link>
+  <Link href="#services" onClick={()=>setDrawerOpen(false)} className="block italic text-white hover:text-blue-600 border-b border-[#00EEFF4D] px-6 py-2">Services</Link>
+  <Link href="#reviews" onClick={()=>setDrawerOpen(false)} className="block italic text-white hover:text-blue-600 border-b border-[#00EEFF4D] px-6 py-2">Reviews</Link>
+  <Link href="#contact" onClick={()=>setDrawerOpen(false)} className="block italic text-white hover:text-blue-600 border-b border-[#00EEFF4D] px-6 py-2">Contact</Link>
 </div>
 
       </div>
